@@ -1,0 +1,154 @@
+:root {
+    --primary: #FFF;
+    --secondary: #d1d1d1;
+    --tertiary: rgb(17, 0, 255);
+    --text: #000;
+
+    --padding: 15px;
+    --margin: 15px;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: var(--text);
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.landingPageContainer {
+    background-color: var(--secondary);
+    border: 1px solid var(--tertiary);
+    min-width: 50vw;
+    display: flex;
+    padding: var(--padding);
+    border-radius: 15px;
+    min-height: 50vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--text);
+}
+
+.GameObjectContainer {
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.GameObjectHeading {
+    font-size: 1.25rem;
+    
+}
+
+.GameObjectButton {
+    padding: 12px 25px;
+    background-color: var(--tertiary);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.GameObjectButton:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.games {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 15px; 
+}
+
+.RoomSelectionContainer {
+    background-color: var(--secondary);
+    border: 1px solid var(--tertiary);
+    min-width: 50vw;
+    min-height: 50vh;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CreateRoomButton {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 15px 25px;
+
+    background-color: var(--tertiary);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.RoomsContainer {
+    color: black;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    gap: 15px;
+}
+
+.RoomContainer {
+    background-color: var(--primary);
+    border: 1px solid var(--tertiary);
+    border-radius: 15px;
+    min-height: 50px;
+
+    min-width: 75%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+.RoomHeading {
+    font-size: 25px;
+}
+
+.RoomButton {
+    background-color: var(--tertiary);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 25px;
+}
