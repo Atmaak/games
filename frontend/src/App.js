@@ -8,6 +8,9 @@ import Rps from './Pages/Game/Rps/Rps'
 
 import './index.css'
 import Rpsgame from './Pages/Game/Rps/Rpsgame';
+import { initializeSocket } from './socket';
+
+initializeSocket()
 
 function App() {
   return (

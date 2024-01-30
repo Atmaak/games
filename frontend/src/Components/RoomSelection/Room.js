@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { useDataContext } from '../../DataContext'
+import { getSocket } from '../../socket'
 const Room = ({ item }) => {
   const { history } = useDataContext()
 
   const redirect = () => {
+    getSocket().emit('join_room', JSON.stringify({room_uuid: item.name}))
     history(`/rps/${item.name}`)
   }
   return (

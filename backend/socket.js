@@ -8,16 +8,9 @@ const initSocket = (server) => {
             origin: ["https://admin.socket.io"],
             credentials: true
         }
-    })   
+    })
 
-    // io.of('/socket').on('connection', (socket) => {
-    //     console.log(socket.id)
-    //     socket.on("disconnect", () => {
-    //         console.log(socket.id) 
-    //     });
-    // })
-
-    io.of('/rps').on('connection', (socket) => {
+    io.of('/socket').on('connection', (socket) => {
         console.log(socket.id)
         socket.on('join_room', (uuid) => {
             socket.join(uuid)
